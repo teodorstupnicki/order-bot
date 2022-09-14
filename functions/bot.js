@@ -5,7 +5,7 @@ const functions = require("firebase-functions");
 const cors = require("cors")({origin: true});
 const admin = require("firebase-admin");
 const serviceAccount = require("./service-account.json");
-const botUrl = "https://api.telegram.org/bot2041662377:AAEY7K2OFTTGM_tczqAnzcuGErjbVcnk6FU/sendMessage";
+const botUrl = TELEGRAM_TOKEN;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
